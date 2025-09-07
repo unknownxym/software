@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia Software - Software Repository 2025</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body data-category="multimedia">
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">SR</div>
+                    Software Repository
+                </div>
+                
+                
+                <div class="header-actions">
+                    <!-- Login and admin buttons removed -->
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="./index.html" class="nav-link" data-category="all">Home</a></li>
+                <li class="nav-item"><a href="./newreleases.html" class="nav-link" data-category="new">New Releases</a></li>
+                <li class="nav-item"><a href="./topdownloads.html" class="nav-link" data-category="top">Top Downloads</a></li>
+                <li class="nav-separator"></li>
+                <li class="nav-item"><a href="./graphics.html" class="nav-link" data-category="graphics">Graphics</a></li>
+                <li class="nav-item"><a href="./internet.html" class="nav-link" data-category="internet">Internet</a></li>
+                <li class="nav-item"><a href="./multimedia.html" class="nav-link active" data-category="multimedia">Multimedia</a></li>
+                <li class="nav-item"><a href="./security.html" class="nav-link" data-category="security">Security</a></li>
+                <li class="nav-item"><a href="./system.html" class="nav-link" data-category="system">System Tools</a></li>
+                <li class="nav-item"><a href="./development.html" class="nav-link" data-category="development">Development</a></li>
+                <li class="nav-item"><a href="./office.html" class="nav-link" data-category="office">Office</a></li>
+                <li class="nav-item"><a href="./games.html" class="nav-link" data-category="games">Games</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Multimedia Software</h1>
+            <p>Video players, audio editors, and media conversion tools for all your multimedia needs.</p>
+            <div class="search-container">
+                <input type="text" class="search-bar" id="searchInput" placeholder="Search multimedia software...">
+                <button class="search-btn" id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </section>
+        
+        <main class="main-content">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <div class="section-icon"><i class="fas fa-photo-video"></i></div>
+                    Multimedia Software
+                </h2>
+            </div>
+            
+            <div class="software-grid" id="softwareGrid">
+                <!-- Software cards will be dynamically added here -->
+            </div>
+        </main>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="footer-logo">Software Repository</div>
+                    <p style="color: var(--text-secondary); margin-bottom: 20px;">Your ultimate destination for premium software downloads since 2023.</p>
+                    <div style="display: flex; gap: 15px;">
+                        <a href="#" style="color: var(--text-secondary); font-size: 20px;"><i class="fab fa-github"></i></a>
+                        <a href="#" style="color: var(--text-secondary); font-size: 20px;"><i class="fab fa-twitter"></i></a>
+                        <a href="#" style="color: var(--text-secondary); font-size: 20px;"><i class="fab fa-discord"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>
+                        <div class="footer-icon"><i class="fas fa-folder"></i></div>
+                        Categories
+                    </h3>
+                    <ul class="footer-links">
+                        <li><a href="./graphics.html" data-category="graphics">Graphics</a></li>
+                        <li><a href="./internet.html" data-category="internet">Internet</a></li>
+                        <li><a href="./multimedia.html" data-category="multimedia">Multimedia</a></li>
+                        <li><a href="./security.html" data-category="security">Security</a></li>
+                        <li><a href="./system.html" data-category="system">System Tools</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>
+                        <div class="footer-icon"><i class="fas fa-star"></i></div>
+                        Popular Software
+                    </h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Adobe Photoshop</a></li>
+                        <li><a href="#">Google Chrome</a></li>
+                        <li><a href="#">VLC Media Player</a></li>
+                        <li><a href="#">Visual Studio Code</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>
+                        <div class="footer-icon"><i class="fas fa-info-circle"></i></div>
+                        Resources
+                    </h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Software Repository. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Modal Overlay -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+    
+    <!-- Admin Panel Modal -->
+    <div class="admin-panel" id="adminPanel">
+        <div class="admin-header">
+            <h2 class="admin-title">
+                <i class="fas fa-cog"></i> Admin Panel
+            </h2>
+            <button class="close-admin" id="closeAdmin">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <form id="softwareForm">
+            <div class="form-group">
+                <label for="softwareName">Software Name</label>
+                <input type="text" id="softwareName" placeholder="Enter software name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="softwareCategory">Category</label>
+                <select id="softwareCategory" required>
+                    <option value="graphics">Graphics</option>
+                    <option value="internet">Internet</option>
+                    <option value="multimedia">Multimedia</option>
+                    <option value="security">Security</option>
+                    <option value="system">System Tools</option>
+                    <option value="development">Development</option>
+                    <option value="office">Office</option>
+                    <option value="games">Games</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="softwareVersion">Version</label>
+                <input type="text" id="softwareVersion" placeholder="e.g. 1.0.0" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="softwareSize">File Size</label>
+                <input type="text" id="softwareSize" placeholder="e.g. 150 MB" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="softwareDescription">Description</label>
+                <textarea id="softwareDescription" placeholder="Enter software description" required></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label for="softwareImage">Image URL</label>
+                <input type="text" id="softwareImage" placeholder="https://example.com/image.png">
+            </div>
+            
+            <div class="form-group">
+                <label for="githubLink">GitHub Download Link</label>
+                <input type="text" id="githubLink" placeholder="https://github.com/username/repo/raw/main/file.exe" required>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="isFeatured">
+                <label for="isFeatured">Featured Software</label>
+            </div>
+            
+            <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-plus"></i> Add Software
+                </button>
+                <button type="button" class="btn btn-secondary" id="resetForm">
+                    <i class="fas fa-redo"></i> Reset
+                </button>
+            </div>
+        </form>
+    </div>
+    
+    <div class="notification" id="notification">
+        <span class="notification-icon"></span>
+        <span class="notification-message"></span>
+    </div>
+    
+    <script src="./js/data.js"></script>
+    <script src="./js/main.js"></script>
+    </body>
+</html>
